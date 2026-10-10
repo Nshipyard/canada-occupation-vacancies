@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useLang } from "@/i18n";
 import { CATEGORIES } from "@/data";
 import { ScatterChart, WageTrendLines } from "@/components/charts";
+import ShareableCharts from "@/components/ShareableCharts";
 
 export default function Home() {
   const { t } = useLang();
@@ -78,6 +79,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <ShareableCharts projectKey="vacancies" />
     </div>
   );
 }
