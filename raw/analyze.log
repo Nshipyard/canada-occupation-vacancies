@@ -1,0 +1,49 @@
+quarters: 2015Q1 -> 2026Q2 (44)
+levels: {0: 11, 1: 45, 2: 89, 3: 162, 4: 516}
+median lt90_share=22.2, median wage=30.95
+  Health                   vac=  63,850 lt90= 45.9% wage=$34.85 quad=supply_problem
+  Education and law        vac=  43,735 lt90= 29.0% wage=$30.95 quad=supply_problem
+  Trades and transport     vac= 105,255 lt90= 27.7% wage=$29.70 quad=wage_problem
+  Manufacturing            vac=  21,215 lt90= 25.6% wage=$26.05 quad=wage_problem
+  Sciences                 vac=  43,400 lt90= 22.2% wage=$41.80 quad=supply_problem
+  Sales and service        vac= 171,750 lt90= 21.8% wage=$20.60 quad=filling
+  Resources and agriculture vac=  16,190 lt90= 20.7% wage=$23.90 quad=filling
+  Business and finance     vac=  70,795 lt90= 18.2% wage=$32.45 quad=filling
+  Senior management        vac=     835 lt90= 16.8% wage=$82.60 quad=filling
+  Arts and sport           vac=  10,910 lt90= 16.0% wage=$26.40 quad=filling
+minor groups with data: 59
+  Support occupations in food, accommodation and touri   vac= 47,970 lt90= 24.0% wage=$17.85
+  Helpers and labourers                                  vac= 20,800 lt90= 23.7% wage=$23.05
+  Occupations in services                                vac= 20,040 lt90= 30.8% wage=$19.5
+  Technical maintenance trades                           vac= 17,400 lt90= 39.6% wage=$34.15
+  Technical occupations in health (except practitioner   vac= 16,965 lt90= 48.2% wage=$34.1
+  Sales support occupations                              vac= 16,630 lt90= 27.7% wage=$17.55
+  Transportation occupations                             vac= 16,230 lt90= 28.8% wage=$28.5
+  Professional occupations in applied sciences (except   vac= 15,195 lt90= 21.6% wage=$45.5
+  Support occupations in cleaning and related services   vac= 15,070 lt90= 19.7% wage=$20.55
+  Occupations in customer, information and protective    vac= 14,145 lt90= 11.8% wage=$22.15
+  Administrative occupations                             vac= 13,450 lt90= 20.1% wage=$26.9
+  Harvesting, landscaping and natural resources labour   vac= 11,665 lt90= 19.2% wage=$20.95
+unit groups with data: 393
+  Food counter attendants, kitchen helpers and related   vac= 34,005 lt90= 28.1% wage=$17.75
+  Retail salespersons and visual merchandisers           vac= 18,315 lt90=  9.8% wage=$18.35
+  Registered nurses and registered psychiatric nurses    vac= 17,275 lt90= 45.1% wage=$36.35
+  Transport truck drivers                                vac= 13,780 lt90= 25.3% wage=$29.0
+  Cooks                                                  vac= 13,310 lt90= 22.8% wage=$19.55
+  Nurse aides, orderlies and patient service associate   vac= 13,050 lt90= 43.0% wage=$25.9
+  Construction trades helpers and labourers              vac= 10,795 lt90= 18.6% wage=$25.1
+  Food and beverage servers                              vac= 10,120 lt90= 15.0% wage=$17.5
+  Light duty cleaners                                    vac=  9,980 lt90= 19.7% wage=$20.0
+  Store shelf stockers, clerks and order fillers         vac=  9,340 lt90= 30.7% wage=$17.55
+  Social and community service workers                   vac=  9,335 lt90= 27.3% wage=$25.25
+  Material handlers                                      vac=  9,175 lt90= 30.0% wage=$20.7
+anomalies: 40
+  Sales and service 2020Q1: 25.9% vs trailing 9.3% (z=23.2)
+  Trades and transport 2020Q1: 34.2% vs trailing 13.6% (z=20.3)
+  Manufacturing 2020Q1: 36.1% vs trailing 10.5% (z=18.4)
+  Education and law 2020Q1: 30.3% vs trailing 10.1% (z=15.48)
+  Resources and agriculture 2020Q1: 34.9% vs trailing 11.6% (z=14.16)
+  Health 2020Q1: 43.6% vs trailing 21.7% (z=11.54)
+  Arts and sport 2017Q2: 16.1% vs trailing 6.9% (z=7.63)
+  Sciences 2020Q1: 25.7% vs trailing 18.9% (z=5.3)
+wrote public/data/*.json and public/downloads/*.csv

@@ -1,0 +1,9 @@
+NOC members: 824, characteristic members: 48
+  chunk 0: scanned 400,000, cells 3,605
+  chunk 80: scanned 32,400,000, cells 174,374
+  chunk 100: scanned 40,400,000, cells 233,815
+total rows scanned: 67,508,672; cells kept: 435,256
+quarantine: {'suppressed_or_unreliable': 322588, 'negative_vacancies': 0, 'wage_out_of_range': 0, 'unknown_noc_name': 0}
+wages kept: n=273,373, min=6.90, p1=12.30, median=26.40, p99=70.00, max=195.95
+saved raw/cells.json and raw/meta.json
+EXIT:0
