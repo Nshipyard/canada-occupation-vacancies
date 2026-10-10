@@ -1,0 +1,42 @@
+# Vacancy Duration vs Offered Wage
+
+Which unfilled jobs are wage problems vs supply problems? An Open Nshipyard project by Richardson Dackam.
+
+## What it answers
+
+10 Canadian broad occupation groups on two axes: vacancy duration (share of posts open 90+ days) vs offered hourly wage in CAD. Medians (upper-middle of the 10 groups, 2026Q2): 22.2% long-term share, $30.95/hr.
+
+- Above duration median, at/above wage median: supply problem (health 45.9% at $34.85, sciences 22.2% at $41.80, education and law 29.0% at $30.95).
+- Above duration median, below wage median: wage problem (trades 27.7% at $29.70, manufacturing 25.6% at $26.05).
+- Below duration median: filling (sales and service 21.8% at $20.60, with 171,750 vacancies, the most of any group).
+
+Latest (2026Q2): 548,400 vacancies nationally, 25.9% open 90+ days. Peak: 855,965 in 2022Q4, 39.5% open 90+ days.
+
+## Data
+
+- StatCan 14-10-0443 (JVWS, quarterly, unadjusted), current series 2015Q1 to 2026Q2. Archived 14100328 fully superseded. 322,588 suppressed/unreliable cells quarantined. Name-based NOC mapping across the 2016/2021 code change.
+- Wages are offered wages: what employers post, not what workers are paid.
+
+## Files agents care about
+
+- `public/data/broad.json` - 10 categories x quarterly series (latest, quadrant, medians, quarantine counts)
+- `public/data/minor.json` - 59 minor groups, 2026Q2 (vacancies, lt90_share, wage)
+- `public/data/unit.json` - 393 unit-group occupations, 2026Q2
+- `public/data/national.json` - national quarterly series
+- `public/data/anomalies.json` - detected long-term-share spikes (2020Q1 COVID freeze)
+- `public/downloads/broad_quarterly.csv` (439 rows), `minor_latest.csv` (59), `unit_latest.csv` (393)
+- `scripts/build_data.py` - regenerates everything from the raw StatCan download
+
+## API
+
+- GET /api/v1/national?quarter=2026Q2
+- GET /api/v1/categories
+- GET /api/v1/category/5 (full series for one broad group)
+- GET /api/v1/ranking (59 minor groups by long-term share)
+- GET /api/v1/lookup?q=nurse (search 393 unit occupations)
+- GET /api/openapi.json
+- POST /mcp - JSON-RPC 2.0 Streamable HTTP, tools: occupation_lookup, duration_wage_ranking, trend
+
+## Limits
+
+Occupational breakdowns start 2015Q1 (senior management 2015Q2). No 2020Q2 or 2020Q3 (survey suspended). The quadrant is a descriptive cut at two medians, not a causal diagnosis. Offered wages are not accepted wages. See /methodology.
